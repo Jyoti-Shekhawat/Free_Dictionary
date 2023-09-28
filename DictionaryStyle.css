@@ -1,0 +1,66 @@
+body{
+    
+   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: xx-large;
+    margin: auto;
+    background-color: black;
+    margin-left: 10px;
+    color: white;
+    background-size: cover; 
+
+}
+
+#header{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#input{
+    text-align: center;
+    height: 30px;
+    width: 300px;
+    font-size:large;
+  
+
+}
+
+#btn{
+    text-align: center;
+   margin-left: 10px;
+   height: 35px;
+    width: 100px;
+    font-size:large;
+   
+}
+#title{
+    text-align: center;
+    
+   
+    
+}
+#antonyms{
+    font-size: medium;
+    text-align:left
+}
+
+#definition{
+    font-size: medium;
+    text-align:left
+}
+
+#synonymList{
+    font-size: medium;
+    text-align:left 
+}
+
+#antonymsList{
+    font-size: medium;
+    text-align:left 
+}
+
+.text{
+    font-size: medium;
+}
