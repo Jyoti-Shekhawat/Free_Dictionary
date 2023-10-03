@@ -64,3 +64,15 @@ body{
 .text{
     font-size: medium;
 }
+
+#phonetics{
+    color: yellowgreen
+}
+
+span{
+    padding: 10px;
+}
+
+i{
+    padding-right: 10px;
+}
