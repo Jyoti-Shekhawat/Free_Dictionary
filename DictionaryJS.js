@@ -71,7 +71,7 @@ async function Dictionary(word) {
             await RawData(data[0].meanings);
         } 
     } catch (e) {
-        errorElement.innerText = ("An error occurred while fetching data."+e);
+        errorElement.innerText = ("Sorry, we couldn't find definitions for the word you were looking for"+e);
     }
 }
 
