@@ -5,10 +5,11 @@ body{
     text-align: left;
     font-size: xx-large;
     margin: auto;
-    background-color: black;
+    /* background-color: black; */
     margin-left: 10px;
     color: white;
     background-size: cover; 
+    background-image: url(black-1072366_1920.jpg);
 
 }
 
