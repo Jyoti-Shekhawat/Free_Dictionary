@@ -51,6 +51,7 @@ async function emptyList() {
     noAntData.remove();
     noSynData.remove();
     audio = null;
+    
 } 
 
 function clearList(list) {
@@ -71,7 +72,11 @@ async function Dictionary(word) {
             await RawData(data[0].meanings);
         } 
     } catch (e) {
-        errorElement.innerText = ("Sorry, we couldn't find definitions for the word you were looking for"+e);
+        
+        errorElement.innerText = (e+ "  :Sorry, we couldn't find definitions for the word you were looking for");
+      
+        
+       
     }
 }
 
