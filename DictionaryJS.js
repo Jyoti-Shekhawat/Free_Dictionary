@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 //Free dictionary
+=======
+// free
+>>>>>>> main
 let url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
 let btn = document.querySelector("#btn");
@@ -53,6 +57,7 @@ async function emptyList() {
     noAntData.remove();
     noSynData.remove();
     audio = null;
+    
 } 
 
 function clearList(list) {
@@ -73,7 +78,11 @@ async function Dictionary(word) {
             await RawData(data[0].meanings);
         } 
     } catch (e) {
-        errorElement.innerText = ("An error occurred while fetching data."+e);
+        
+        errorElement.innerText = (e+ "  :Sorry, we couldn't find definitions for the word you were looking for");
+      
+        
+       
     }
 }
 
