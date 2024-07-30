@@ -1,9 +1,6 @@
 
-<<<<<<< HEAD
 //Free dictionary
-=======
-// free
->>>>>>> main
+
 let url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
 let btn = document.querySelector("#btn");
