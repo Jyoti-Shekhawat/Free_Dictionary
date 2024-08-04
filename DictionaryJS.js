@@ -26,11 +26,13 @@ let audio;
 
 btn.addEventListener("click", async (event) => {
     try {
-         
+        event.preventDefault()
         await emptyList();
         let word = document.querySelector("#input").value;
+        console.dir(document.querySelector("#input"))
         div.append(word);
         await Dictionary(word);
+        
     } catch (e) {
         errorElement.innerText = e;
     }
@@ -54,6 +56,7 @@ async function emptyList() {
     noAntData.remove();
     noSynData.remove();
     audio = null;
+
     
 } 
 
@@ -210,7 +213,7 @@ async function phoneticsAudio(data) {
             if (phonetics[i].hasOwnProperty("audio")) {
                 count++;
                 if (count>=1 && phonetics[i].audio !== "") {
-                    console.log()
+                    console.log(phonetics[i].audio)
                      audio = new Audio (phonetics[i].audio);
                      
                      
